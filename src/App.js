@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Switch, Route, NavLink, Link } from "react-router-dom";
+import { Switch, Route, NavLink } from "react-router-dom";
 
 function App() {
   return (
@@ -11,9 +11,9 @@ function App() {
         <NavLink to="/about">About</NavLink>
       </navBar>
       <Switch>
-        {/* <Route path="/discover" component={DiscoverMoviePage} />
-        <Route path="/about" component={AboutPage} />
-        <Route path="/" component={HomePage} /> */}
+        <Route path="/discover" />
+        <Route path="/about" />
+        <Route path="/" />
       </Switch>
     </div>
   );
